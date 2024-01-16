@@ -15,10 +15,10 @@ main () {
 }
 
 prepare_env () {
-    if [ ! -e ~/.mic_over_Mumble ]; then
-        mkdir ~/.mic_over_Mumble
+    if [ ! -e $XDG_CONFIG_HOME/mic_over_Mumble ]; then
+        mkdir $XDG_CONFIG_HOME/mic_over_Mumble
     fi
-    cd ~/.mic_over_Mumble
+    cd $XDG_CONFIG_HOME/mic_over_Mumble
 
     echo "bonjour=true" > murmur.ini
     echo "bandwidth=130000" >> murmur.ini
